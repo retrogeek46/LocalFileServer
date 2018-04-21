@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="retrogeek46.localwebserver.MainActivity">
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="374dp"
+        android:layout_height="42dp"
+        android:inputType="text"
+        tools:layout_editor_absoluteY="1dp"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:onClick="startStreaming"
+        android:text="Start"
+        tools:layout_editor_absoluteY="231dp"
+        tools:layout_editor_absoluteX="129dp" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startButton"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text=""
+        android:textStyle="bold"
+        tools:layout_editor_absoluteY="310dp"
+        tools:layout_editor_absoluteX="106dp" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status"
+        android:layout_centerHorizontal="true"
+        android:onClick="stopStreaming"
+        android:text="Stop"
+        tools:layout_editor_absoluteY="358dp"
+        tools:layout_editor_absoluteX="129dp" />
+
+</RelativeLayout>
